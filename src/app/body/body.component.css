@@ -1,0 +1,80 @@
+.container{
+  width: 98vw;
+  height:auto;
+  display: flex;
+}
+
+.addStudent{
+  width: 40%;
+  height: auto;
+  padding: 10px;
+}
+.header{
+  width: 100%;
+  height: 40px;
+  background-color: coral;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type=text], input[type=number]{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(251, 209, 194);
+  border: none;
+  margin-top: 10px;
+}
+
+.submit{
+  width: 100%;
+  height: 30px;
+  background-color: coral;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  border:none;
+  border-radius: 5px;
+}
+
+.details{
+  width: 60%;
+  height: auto;
+  padding: 10px;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.nav{
+  background-color: coral;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 25%;
+  height: 30px;
+}
+
+.data{
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.warning{
+  color: red;
+  display: none;
+  font-weight: bold;
+}
+
+.success{
+  display:none;
+  font-weight: bold;
+}

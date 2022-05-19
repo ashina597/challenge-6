@@ -1,0 +1,39 @@
+
+<div class="container">
+  <div class="addStudent">
+    <div class="header">
+    <p>Add a Student</p>
+    </div>
+    <div class="warning">
+    <p></p>
+    </div>
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name" [(ngModel)]="newName"><br>
+    <label for="balance">Balance</label><br>
+    <input type="number" id="balance" name="balance" [(ngModel)]="newBalance"><br>
+    <button type="submit" class="submit" (click)="addStudent()">Add a student</button>
+    <div class="success">
+      <p>Student added successfully</p>
+      </div>
+  </div>
+  <div class="details">
+    <div class="header">
+    <p>Student Name</p>
+    <p>Balance</p>
+    </div>
+    <input type="text" class="search" placeholder="Search .." [(ngModel)]="searchstring">
+    <div class="navigation">
+      <button type="submit" class="nav" (click)="all_students()">Get all Students</button>
+      <button type="submit" class="nav" (click)="students_with_balance()">Get Students with balance</button>
+      <button type="submit" class="nav" (click)="students_without_balance()">Get Students without balance</button>
+      <p id="status"></p>
+    </div>
+    <div *ngIf="students.length===0">
+      <p>No students available</p>
+    </div>
+    <div class="data" *ngFor="let student of students |sort | search:searchstring | navigation:status">
+      <p>{{student.name}}</p>
+      <p [ngStyle]="{'color':(student.balance>0)? 'red' :'green'}">{{student.balance | currency:'Ksh'}}</p>
+    </div>
+  </div>
+</div>

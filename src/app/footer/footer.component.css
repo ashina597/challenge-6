@@ -1,0 +1,20 @@
+.container{
+  width: 98vw;
+  height: 20vh;
+  background-color: coral;
+  color: black;
+  display: flex;
+  text-align: center;
+}
+
+.contacts{
+  width: 50%;
+  height: auto;
+  padding: 10px;
+}
+
+.socialMedia{
+  width: 50%;
+  height: auto;
+  padding: 10px;
+}

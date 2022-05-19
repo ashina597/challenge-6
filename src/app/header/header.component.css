@@ -1,0 +1,23 @@
+.header{
+  width: 98vw;
+  height: 20vh;
+  background-color: coral;
+  text-align: center;
+  background-image:url(bg_image.jpg);
+  background-size: auto;
+  background-blend-mode: lighten;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  padding: 20px;
+}
+
+.image{
+  background-color: coral;
+  mix-blend-mode: luminosity;
+  width: 70px;
+  height: 70px;
+}
